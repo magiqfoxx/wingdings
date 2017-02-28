@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>hello</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+    <header>
+        
+        hehgfg
+    </header>
+    <nav>
+        <ul>
+            <li id="active"><a href="index.html">home</a></li>
+            <li><a href="about-me.html">about me</a></li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        <ul>
+        hello
+        /* {% for post in posts %}
+        <li>
+        {{item.title}}
+        {{item.text}}
+        {{item.author}}
+        {{item.published_date}}
+        {{item.created_date}}
+        {% endfor %}*/
+        </ul>
+
+        {% endblock %}
+    </main>
+    <footer>
+        hehgfg
+        <div class="copyright">copyright</div>
+    </footer>
+</body>
+</html>
