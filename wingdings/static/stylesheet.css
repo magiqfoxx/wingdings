@@ -61,10 +61,16 @@ main{
     overflow:auto;
 
     list-style-type:none;
+
+    font-family:"Montserrat";
    
 }
 main li{
     list-style-type:none;
+}
+h3{
+    font-family:"Ubuntu";
+    
 }
 
 #largeImg{

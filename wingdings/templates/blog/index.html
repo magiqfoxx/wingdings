@@ -5,8 +5,8 @@
         <ul>
         {% for post in posts %}
         <li>
-        <h3>{{post.title|capfirst}}</h3>
-        <p>{{post.text}}</p>
+        <h3><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h3>
+        <p>{{post.text|linebreaksbr}}</p>
         <h4>{{post.author}}</h4>
         <h5>created:{{post.created_date}}</h5>
         <h5>published:{{post.published_date}}</h5>
