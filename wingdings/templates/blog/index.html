@@ -1,42 +1,20 @@
 {% extends 'base.html' %}
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>hello</title>
-    <link rel="stylesheet" href="/stylesheet.css">
-</head>
-<body>
-    <header>
+{% block content %}
+
         
-        hehgfg
-    </header>
-    <nav>
         <ul>
-            <li id="active"><a href="index.html">home</a></li>
-            <li><a href="about-me.html">about me</a></li>
-            <li><a href="links.html">links</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-        </ul>
-    </nav>
-    <main>
-        {% block content %}
-        <ul>
-        hello
-        /* {% for post in posts %}
+        {% for post in posts %}
         <li>
-        {{item.title}}
-        {{item.text}}
-        {{item.author}}
-        {{item.published_date}}
-        {{item.created_date}}
-        {% endfor %}*/
+        <h3>{{post.title|capfirst}}</h3>
+        <p>{{post.text}}</p>
+        <h4>{{post.author}}</h4>
+        <h5>created:{{post.created_date}}</h5>
+        <h5>published:{{post.published_date}}</h5>
+        </li>
+        {% endfor %}
+
+
         </ul>
 
-        {% endblock %}
-    </main>
-    <footer>
-        hehgfg
-        <div class="copyright">copyright</div>
-    </footer>
-</body>
-</html>
+        
+{% endblock %}

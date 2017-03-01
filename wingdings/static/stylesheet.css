@@ -51,7 +51,7 @@ nav li a{
 main{
     min-height: 50vh;
     margin:0 auto;
-    padding: 3vh 6vh;
+    padding: 3vh 3vh;
     width:45vw;
     
     background-color:rgba(235, 206, 150,0.2);
@@ -59,7 +59,14 @@ main{
     
     
     overflow:auto;
+
+    list-style-type:none;
+   
 }
+main li{
+    list-style-type:none;
+}
+
 #largeImg{
     width:40vw;
     height: 50vh;

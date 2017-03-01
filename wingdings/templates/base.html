@@ -1,15 +1,33 @@
 {% load staticfiles %}
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Inventory Project</title>
-		<meta name="description" content="">
-		<link rel="stylesheet" href="{% static 'main.css' %}">
-	</head>
-	<body>
+<head>
+    <title>hello</title>
+	<meta charset="utf-8">	
+	<meta name="description" content="">
+	<link rel="stylesheet" href="{% static 'stylesheet.css' %}">    
+<body>
+    <header>
+        
+        hehgfg
+    </header>
+    <nav>
+        <ul>
+            <li id="active"><a href="index.html">home</a></li>
+            <li><a href="about-me.html">about me</a></li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+        </ul>
+    </nav>
+    <main>
 	{% block content %}
 	{% endblock content %}
-	<script src="{% static 'main.js' %}"></script>
-	</body>
+	   </main>
+    <footer>
+        hehgfg
+        <div class="copyright">copyright</div>
+    </footer>
+    <script src="{% static 'main.js' %}"></script>
+</body>
 </html>
+
